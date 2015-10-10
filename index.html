@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+  <head>
+    <title>Admatic Github - Desafio Front-End</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/css/admatic-stylesheet.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div role="main" id="wrapper" ng-controller="InicioCtrl">
+      
+      <aside id="sidebar">
+        <ul class="nav-admatic">
+            <li class="brand">
+                <a href="#">Projetos</a>
+            </li>
+            <li ng-show="repos" ng-repeat="repo in repos" ng-click="activate(repo)">
+                <a ng-class="{ active : isActive(repo) }" href="#/{{ repo.name }}">{{ repo.name }}</a>
+            </li>
+            <li id="load">
+                <span ng-hide="repos"><i class="fa fa-refresh fa-spin"></i></span>
+            </li>
+            
+        </ul>
+      </aside>
+      
+      <div id="content-admatic" ng-view="">
+        
+        
+      </div>
+      
+   </div>
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.0-beta.1/angular-route.js"></script>
+    <script src="https://code.angularjs.org/1.5.0-beta.1/angular-resource.min.js"></script>
+    
+    <script src="/app/app.js"></script>
+    <script src="/app/controllers/repoCtrl.js"></script>
+    <script src="/app/services/admaticService.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<div class="conteiner-fluid">
+    <ul class="nav nav-tabs admatic-tabs">
+            <li>Estrelas {{ stars }}</li>
+            <li>Forks {{ forks }}</li>
+            <li>Contribuições {{ contribs }}</li>
+    </ul>
+
+</div>
+
+
+<div class="container-fluid" ng-repeat="commit in commits">
+    <div class="row content-data">
+        <div class="date-commit">{{ commit.commit.committer.date | date:"MM/dd/yyyy" }}</div>
+        <a href="{{ commit.author.url }}" class="thumbnail user-img-mask">
+              <img  itemprop="image" src="{{ commit.author.avatar_url }}" alt="{{ commit.commit.committer.name }} picture">
+            </a>
+        <div class="col-lg-12" id="content-data">
+            
+            <h2> {{ commit.commit.message }} </h2>
+            {{ commit.commit.committer.name }}
+             
+
+        </div>
+        
+    </div>
+</div>
+
+<a id="btn-load" ng-hide="finish" ng-click="next_page()" class="btn btn-default btn-lg btn-block">Carregar Mais...</a>

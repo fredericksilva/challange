@@ -8,8 +8,30 @@
 ```
 ### Desafio - Front End
 
+<<<<<<< HEAD
 
 ----
 :+1: [**Frederick Silva**](http://twitter.com/fredericksilva)
 
 
+=======
+### Tech
+AngularJs
+ApiGithub
+Javascript
+HTML
+CSS
+#### Terceiros:
+Bootstrap
+
+## Executando a Aplicação
+
+
+1) No terminal com Python2.7 ou superior.
+
+    $ python -m SimpleHTTPServer 8080
+2) ou apenas use o firefox aperte ctrl+O e execute o index.html
+
+----
+:+1: [**Frederick Silva**](http://twitter.com/fredericksilva)
+>>>>>>> admatic
