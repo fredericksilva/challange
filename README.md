@@ -8,13 +8,6 @@
 ```
 ### Desafio - Front End
 
-<<<<<<< HEAD
-
-----
-:+1: [**Frederick Silva**](http://twitter.com/fredericksilva)
-
-
-=======
 ### Tech
 AngularJs
 ApiGithub
@@ -34,4 +27,3 @@ Bootstrap
 
 ----
 :+1: [**Frederick Silva**](http://twitter.com/fredericksilva)
->>>>>>> admatic
